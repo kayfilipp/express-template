@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Application</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+
+		<!-- load bootstrap and fontawesome via CDN -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="./ui/styles.css">
+	</head>
+
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					Application
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li>Home</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+<!--
+  INITIALIZE THE APP
+    [ng-app] The name of the AngularJS application to use.
+-->
+<body ng-app="myApp">
+	
+  <ng-view>		
+		<!--
+			[ng-view] This is where our view from the angular router will load.
+		-->
+	</ng-view>
+
+  <!--
+    LIBRARIES/FRAMEWORKS
+      Data is retrieved from Sky API via an AngularJS application.
+  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.js"></script>
+  <!--
+    SCRIPTS
+      Local Javascript files for initializing angular and our app logic.
+  -->
+  <script src="./ui/app.js"></script>
+</body>
+</html>

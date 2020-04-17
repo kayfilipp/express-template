@@ -1,0 +1,40 @@
+html, body, input, select, textarea{
+	font-size: 1.05em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.note{
+	font-size: 0.95em;
+}
+
+.faded{
+	opacity: 0.5;
+}
+
+.normal{
+	opacity: 1;
+}
+.subtext{
+	font-size: 0.75em;
+}
+
+.image-container {
+  width: 80%;
+  margin: auto;
+	height: 25%;
+}
+
+.one {
+  float: left;
+	width: 50%;
+}
+
+.two {
+  margin-left: 50%;
+}
+
+
+img{
+	max-width: 50%;
+	height: 200px;
+}
